@@ -1,28 +1,27 @@
-'use script'
+'use strict';
 
-const btnShowModal = document.getElementById('btn-show');
-const btnCloseModal = document.getElementById('btn-close');
-const ModalContainer = document.getElementById('modal-container');
-const overlayContainer =document.getElementById('overlay');
-
-
-btnShowModal.addEventListener('click',function(){
-    ModalContainer.classList.add('show');
-    overlayContainer.classList.add('show');
-
+const showModal= document.getElementById('btn-show');
+showModal.addEventListener('click',function() {
+  cardContainer.classList.add('show');
+  overlay.classList.add('show');
 });
 
-
-btnCloseModal.addEventListener('click',function(){
-    ModalContainer.classList.remove('show');
-    overlayContainer.classList.remove('show');
-
+const closeModal= document.getElementById('btn-close');
+closeModal.addEventListener('click',function() {
+  cardContainer.classList.remove('show');
+  overlay.classList.remove('show');
 });
 
+const cardContainer= document.getElementById('card-container');
 
-overlayContainer.addEventListener('click',function(){
-    ModalContainer.classList.remove('show');
-    overlayContainer.classList.remove('show');
-
+const overlay= document.getElementById('overlay');
+overlay.addEventListener('click',function() {
+  cardContainer.classList.remove('show');
+  overlay.classList.remove('show');
 });
 
+document.addEventListener('keydown',function(k) {
+  if(k.key === "Escape");
+  cardContainer.classList.remove('show');
+  overlay.classList.remove('show');
+});

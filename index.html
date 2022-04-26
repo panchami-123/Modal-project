@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Two column layout</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript MODAL</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <div class="overlay" id="overlay"></div>
-    <h1 class="main-title">A Modal Project</h1>
+    <h1 class="title">Modal Project</h1>
     <div class="btn-container">
-        <button type="button" class="btn btn-red" id="btn-show">Open Modal</button>
-        <button type="button" class="btn btn-red" id="btn-show">close Modal</button>
+      <button type="button" class="btn btn-pink" id="btn-show">Click Here</button>
     </div>
-    <div class="modal-header"></div>
-    <div class="modal-body"></div>
-
-    
-</body>
+    <div class="card-container" id="card-container">
+      <div class="btn-close btn" id="btn-close">
+        <button>X</button>
+      </div>
+      <div class="card-header">
+        <img src="C:\Users\KRISHNA PRASAD\Documents\CG PROJECTS\Modal project 2\Taj_Mahal_N-UP-A28-a.jpg" />
+      </div>
+      <div class="card=content">
+	    <h2>Taj Mahal</h2>
+		<p>The Taj Mahal is an Islamic religious building, mosque and tomb built in the 17th century by king Shah Jahan in memory of his wife, Mumtaz Mahal. 
+            Its chief architect was Ustad Ahmad Lahauri. The building is in the city of Agra, Uttar Pradesh.</p>
+      </div>
+    </div>
+	
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
